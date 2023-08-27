@@ -6,7 +6,7 @@ filelist=os.listdir(filepath)
 repeat_range=300
 
 for filename in filelist :
-    img = cv2.imread("./img_input/"+filename)
+    img = cv2.imread(filepath+filename)
     img_heigh = img.shape[0]
     heigh_begin=[0,(img_heigh//3)-repeat_range,2*(img_heigh//3)-repeat_range]
     dot=filename.index('.')
